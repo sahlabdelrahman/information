@@ -27,109 +27,63 @@ p, h1, h2, h3, h4, h5, h6, p, a {
     .container {
         background-color: #FFF;
         border-radius: 5px;
-    }
-    header {
-        padding-top: 30px;
-        .img-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            img {
-                width: 200px;
-                height: 150px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        .data {
+            h3 {
+                text-align: center;
+                font-size: 26px;
+                margin-bottom: 20px;
+                color: #047D5B;
+            }
+            p {
+                font-size: 18px;
+                padding-left: 35px;
+                padding-right: 35px;
+                text-align: center;
+            }
+
+        }
+        table {
+            margin-top: 40px;
+            margin-bottom: 30px;
+            font-size: 18px;
+            color: #047D5B;
+            &.striped > tbody > tr:nth-child(odd) {
+                background-color: #047D5B;
+                color: #FFF;
+                border: 1px solid #fff;
             }
         }
-        ul {
-            li {
+        footer {
+            padding-top: 30px;
+            .img-container {
                 display: flex;
                 justify-content: center;
-                font-size: 13px;
-                font-weight: 600;
-                i {
-                    margin-left: 10px;
+                align-items: center;
+                img {
+                    width: 200px;
+                    height: 150px;
                 }
-                &:last-child {
-                    i {
-                        font-size: 18px;
-                    }
-                }
-                
             }
-        }
-    }
-    .data {
-        p {
-            font-size: 18px;
-            padding-left: 35px;
-            padding-right: 35px;
-            text-align: center;
-        }
-        h6 {
-            text-align: center;
-            font-size: 26px;
-            margin-top: 20px;
-            margin-bottom: 20px;
-            color: #047D5B;
-        }
-    }
-    .form {
-        .row {
-            margin-bottom: 0;
-            form {
-                .input-field {
-                    input {
-                        color: #047D5B;
+            ul {
+                li {
+                    display: flex;
+                    justify-content: center;
+                    font-size: 13px;
+                    font-weight: 600;
+                    i {
+                        margin-left: 10px;
                     }
-                    label {
-                        right: 0.75rem;
-                        &:not(.label-icon).active {
-                            transform: translate(6.75rem, -14px) scale(0.8);
+                    &:last-child {
+                        i {
+                            font-size: 18px;
                         }
                     }
+                    
                 }
             }
         }
-    }
-    .rating {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-bottom: 20px;
-        // rating
-
-        .rate {
-            height: 46px;
-            padding: 0 10px;
-        }
-        .rate:not(:checked) > input {
-            position:absolute;
-            top:-9999px;
-        }
-        .rate:not(:checked) > label {
-            float:right;
-            width:1em;
-            overflow:hidden;
-            white-space:nowrap;
-            cursor:pointer;
-            font-size:30px;
-            color:#ccc;
-        }
-        .rate:not(:checked) > label:before {
-            content: '★ ';
-        }
-        .rate > input:checked ~ label {
-            color: #047D5B;    
-        }
-        .rate:not(:checked) > label:hover,
-        .rate:not(:checked) > label:hover ~ label {
-            color: #93d3cc;  
-        }
-        .rate > input:checked + label:hover,
-        .rate > input:checked + label:hover ~ label,
-        .rate > input:checked ~ label:hover,
-        .rate > input:checked ~ label:hover ~ label,
-        .rate > label:hover ~ input:checked ~ label {
-            color: #93d3cc;
-        }
-    }
+    }  
+    
 }
