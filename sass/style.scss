@@ -65,8 +65,12 @@ p, h1, h2, h3, h4, h5, h6, p, a {
                 }
             }
             .last {
+                border-bottom: 0;
                 td:first-child {
                     border-bottom: 0;
+                }
+                td:last-child {
+                    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
                 }
             }
         }

@@ -56,8 +56,14 @@ p, h1, h2, h3, h4, h5, h6, p, a {
 .content .container table .first td:last-child {
   border-top: 1px solid rgba(0, 0, 0, 0.12);
 }
+.content .container table .last {
+  border-bottom: 0;
+}
 .content .container table .last td:first-child {
   border-bottom: 0;
+}
+.content .container table .last td:last-child {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
 }
 .content .container footer {
   padding-top: 30px;
