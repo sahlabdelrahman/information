@@ -43,10 +43,13 @@ p, h1, h2, h3, h4, h5, h6, p, a {
   font-size: 18px;
   color: #047D5B;
 }
-.content .container table.striped > tbody > tr:nth-child(odd) {
+.content .container table tbody > tr > td:first-child {
   background-color: #047D5B;
   color: #FFF;
   border: 1px solid #fff;
+}
+.content .container table .first {
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
 }
 .content .container footer {
   padding-top: 30px;
