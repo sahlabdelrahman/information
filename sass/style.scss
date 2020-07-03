@@ -52,10 +52,20 @@ p, h1, h2, h3, h4, h5, h6, p, a {
             tbody > tr > td:first-child {
                 background-color: #047D5B;
                 color: #FFF;
-                border: 1px solid #fff;
+                border-top: 1px solid #fff;
+                border-right: 1px solid #fff;
+                border-bottom: 1px solid #fff;
             }
             .first {
-                border-top: 1px solid rgba(0, 0, 0, 0.12)
+                border-top: 1px solid rgba(0, 0, 0, 0.12);
+                td:first-child {
+                    border-top: 0;
+                }
+            }
+            .last {
+                td:first-child {
+                    border-bottom: 0;
+                }
             }
         }
         footer {
